@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách bảo mật - Vụ Lúa</title>
+<style>
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65;max-width:760px;margin:0 auto;padding:20px 16px 48px;color:#1b1b1b;font-size:17px}
+  h1{font-size:1.6rem;color:#2e7d32}
+  h2{font-size:1.2rem;margin-top:2rem;color:#2e7d32}
+  code{background:#f1f1f1;padding:1px 5px;border-radius:4px}
+  .note{background:#fff8e1;border-left:4px solid #f9a825;padding:10px 14px;border-radius:4px}
+  @media (prefers-color-scheme:dark){body{background:#121212;color:#e8e8e8}code{background:#2a2a2a}.note{background:#3a3000}h1,h2{color:#81c784}}
+</style>
+</head>
+<body>
+<h1>Chính sách bảo mật của ứng dụng Vụ Lúa</h1>
+<p>Cập nhật lần cuối: <strong>07/11/2026</strong></p>
+
+<p class="note"><strong>Dành cho người phát hành:</strong> hãy thay các dòng trong dấu [ ] (tên nhà phát triển, email liên hệ) trước khi đăng lên cửa hàng ứng dụng.</p>
+
+<p>Vụ Lúa là ứng dụng giúp nông dân ghi chép chi phí, tiền bán lúa, bệnh lúa và tính tiền lời của từng vụ. Chúng tôi chỉ thu thập những gì thật sự cần để ứng dụng hoạt động, và <strong>không bán dữ liệu của bạn</strong> cho bất kỳ ai.</p>
+
+<h2>1. Dữ liệu ứng dụng lưu</h2>
+<p>Dữ liệu bạn nhập gồm: tên vụ, địa điểm/tên ruộng, diện tích, ngày sạ, các khoản chi phí (kể cả tên đại lý và công nợ), các đợt bán lúa (tên thương lái, giá, số ký từng bao), ghi nhận bệnh lúa (kèm ảnh nếu bạn chụp), và nhắc việc.</p>
+<p>Toàn bộ dữ liệu này <strong>được lưu trước hết trên điện thoại của bạn</strong>. Nếu bạn không đăng nhập, dữ liệu không rời khỏi máy.</p>
+
+<h2>2. Đăng nhập và sao lưu (tùy chọn)</h2>
+<p>Nếu bạn đăng nhập, ứng dụng sao lưu dữ liệu lên máy chủ (dịch vụ Supabase) để bạn không mất dữ liệu khi đổi hoặc mất điện thoại. Khi đó chúng tôi lưu thêm:</p>
+<ul>
+  <li>Địa chỉ email và mật khẩu (mật khẩu được mã hóa, chúng tôi không đọc được), hoặc định danh do Google/Apple cung cấp nếu bạn chọn đăng nhập bằng hai dịch vụ này;</li>
+  <li>Toàn bộ dữ liệu ở mục 1, kể cả ảnh bệnh lúa.</li>
+</ul>
+<p>Dữ liệu của mỗi người được tách riêng bằng cơ chế phân quyền theo từng tài khoản; tài khoản khác không đọc được dữ liệu của bạn. Dữ liệu truyền qua kết nối mã hóa (HTTPS).</p>
+
+<h2>3. Quyền truy cập trên điện thoại</h2>
+<ul>
+  <li><strong>Máy ảnh và thư viện ảnh:</strong> chỉ để bạn gắn ảnh vào ghi nhận bệnh lúa.</li>
+  <li><strong>Micro và nhận dạng giọng nói:</strong> chỉ để nhập số tiền và ghi chú bằng giọng nói khi bạn bấm nút micro. Việc chuyển giọng nói thành chữ do dịch vụ của hệ điều hành (Google/Apple) thực hiện; ứng dụng chỉ nhận lại phần chữ, không lưu âm thanh.</li>
+  <li><strong>Thông báo:</strong> để nhắc việc đồng ruộng đúng ngày giờ bạn đặt. Nhắc việc được đặt ngay trên máy.</li>
+</ul>
+
+<h2>4. Chúng tôi không làm gì</h2>
+<ul>
+  <li>Không bán, cho thuê hay trao đổi dữ liệu của bạn;</li>
+  <li>Không hiển thị quảng cáo và không theo dõi hành vi để quảng cáo;</li>
+  <li>Không thu thập vị trí GPS, danh bạ hay tin nhắn.</li>
+</ul>
+
+<h2>5. Bên thứ ba xử lý dữ liệu</h2>
+<ul>
+  <li><strong>Supabase</strong> (lưu trữ dữ liệu và ảnh khi bạn đăng nhập);</li>
+  <li><strong>Google</strong> hoặc <strong>Apple</strong> (chỉ khi bạn chọn đăng nhập bằng các dịch vụ này, và cho nhận dạng giọng nói của hệ điều hành).</li>
+</ul>
+
+<h2>6. Quyền của bạn</h2>
+<ul>
+  <li><strong>Xuất dữ liệu:</strong> dùng chức năng Xuất Excel/PDF hoặc Sao lưu thủ công trong ứng dụng.</li>
+  <li><strong>Xóa dữ liệu:</strong> từng khoản có thể xóa ngay trong ứng dụng.</li>
+  <li><strong>Xóa tài khoản:</strong> vào <em>Tài khoản và sao lưu</em> &gt; <em>Xóa tài khoản</em>. Toàn bộ dữ liệu và ảnh trên máy chủ và trên máy bị xóa vĩnh viễn, không thể khôi phục.</li>
+  <li>Nếu bạn gỡ ứng dụng mà chưa đăng nhập sao lưu, dữ liệu trên máy sẽ mất.</li>
+</ul>
+
+<h2>7. Trẻ em</h2>
+<p>Ứng dụng dành cho người làm nông, không hướng đến trẻ em dưới 13 tuổi và không cố ý thu thập dữ liệu của trẻ em.</p>
+
+<h2>8. Thay đổi chính sách</h2>
+<p>Khi có thay đổi quan trọng, chúng tôi sẽ cập nhật trang này và ghi rõ ngày cập nhật ở đầu trang.</p>
+
+<h2>9. Liên hệ</h2>
+<p>[TÊN NHÀ PHÁT TRIỂN] &mdash; Email: <strong>[EMAIL LIÊN HỆ]</strong></p>
+</body>
+</html>
